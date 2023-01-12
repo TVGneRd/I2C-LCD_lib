@@ -24,3 +24,20 @@
 - PrintChar(const char chr) - вывести 1 символ
 - Clear() - очистить дисплей
 - Curs(СТРОКА, СТОЛБЕЦ) - переместить курсор на LCD
+
+## Пример кода
+```cpp
+
+#define F_CPU 8000000UL
+
+#include "i2c.h"
+#include "lcd.h"
+
+int main()
+{
+	wire_set(8000000, 100000);
+	LCD_Init();
+	PrintString("WAITING...");
+}
+
+```
